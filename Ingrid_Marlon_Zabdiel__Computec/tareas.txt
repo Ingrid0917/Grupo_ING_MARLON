@@ -1,0 +1,10 @@
+implementacion base de datos completa(lunes)
+desarrollo de prototipo (index(para proxima semana lunes) - reparaciones - inventario)
+terminar DSS(proxima semana lunes)
+detallar cronograma (lunes)
+pasar TODAS las actividades del cronograma al dotProject
+
+IMPLEMENTAR POR ETAPAS
+	ACOMODAR POR MODULOS
+		TAREAS
+		    SUBTAREAS

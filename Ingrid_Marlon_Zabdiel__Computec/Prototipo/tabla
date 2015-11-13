@@ -1,0 +1,27 @@
+<table class="CSS_Table">
+                    <th>Tipo de Equipo</th>
+                    <tr>
+                        <td>
+                            <input type="radio" name="equipo" value="Computadora"/>Computadora
+                            <input type="radio" name="equipo" value="Impresora">Impresora
+                            <input type="radio" name="equipo" value="Celular">Celular
+                        </td>
+                    </tr>
+                </table>
+                <tr>
+                <table class="CSS_Table">
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Serie</th>
+                    <th>Estado</th>
+                    <tr>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                        <td><input type="text"/></td>
+                        <td><select>
+                                <option value="Nuevo">Nuevo</option>
+                                <option value="Pendiente">Pendiente</option>
+                                <option value="Listo">Listo</option>
+                            </select></td>
+                    </tr>
+                </table>
