@@ -32,3 +32,10 @@
     background:-moz-linear-gradient( center top, #82c0ff 5%, #56aaff 100% );
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#82c0ff", endColorstr="#56aaff");	background: -o-linear-gradient(top,#82c0ff,56aaff);
 }
+
+.textbox{
+    border-bottom-left-radius:9px;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}

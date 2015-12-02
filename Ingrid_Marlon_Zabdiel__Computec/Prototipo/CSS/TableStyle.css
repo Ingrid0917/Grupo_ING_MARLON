@@ -6,7 +6,7 @@
 	margin:5px;padding:10px;
 	width:100%;
 	box-shadow: 10px 0px 5px #888888;
-	border:1px solid #000000;
+
 	-moz-border-radius-bottomleft:9px;
 	-webkit-border-bottom-left-radius:9px;
 	border-bottom-left-radius:9px;
@@ -72,7 +72,7 @@
 	background-color:#56aaff;
 	border:1px solid #000000;
 	border-width:0px 1px 1px 0px;
-	text-align:left;
+	text-align:center;
 	padding:7px;
 	font-size:12px;
 	font-family:Comic Sans MS;

@@ -1,0 +1,46 @@
+.popupGrayBg {
+    position:absolute; 
+    width:100%; 
+    height:100%; 
+    background:black; 
+    z-index:2;
+    top: 0;
+    left:0; 
+    opacity:.5;
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
+#pop {
+        
+    -moz-border-radius-bottomleft:9px;
+    -webkit-border-bottom-left-radius:9px;
+    border-bottom-left-radius:9px;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px; 
+    position:absolute;  
+    z-index:3;
+    border-bottom: -o-linear-gradient(bottom, #56aaff 5%, #82c0ff 100%);
+    text-align:center;
+    background:white;
+    font: 100% sans-serif;    
+    font-family: "Cooper Black MS", "Cooper black", cursive;
+    color: black;
+    
+
+}
+
+#pop .close{
+    float: right;
+    border-bottom-left-radius:9px;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+[draggable=true] {
+    cursor: move;
+}

@@ -1,32 +1,62 @@
-function agregarEquipo() {
-    var div = document.getElementById("panelEquipos");
-    var html = "<table class='CSS_Table'><th>Tipo de Equipo</th> <tr><td> <input type = 'radio' name = 'equipo' value = 'Computadora'/> Computadora <input type = 'radio' name = 'equipo' value = 'Impresora'> Impresora <input type = 'radio' name = 'equipo' value = 'Celular'> Celular </td></tr></table><table class = 'CSS_Table'><th> Marca </th><th> Modelo </th><th> Serie </th><th> Estado </th><tr><td> <input type = 'text'/> </td><td> <input type = 'text'/> </td><td> <input type = 'text'/> </td><td> <select><option value = 'Nuevo'> Nuevo </option><option value = 'Pendiente'> Pendiente </option><option value = 'Listo'> Listo </option> </select></td> </tr> </table>";
-    var  aux = document.createElement("div");
-    aux.innerHTML=html;
-    div.appendChild(aux);
-    /*
-     // Crea un elemento <table> y un elemento <tbody>
-     var tabla = document.createElement("table");
-     
-     var tblBody = document.createElement("tbody");
-     var hilera = document.createElement("tr");
-     var celda = document.createElement("td");
-     celda.innerHTML = "<input type='radio' name='equipo' value='Computadora'/>Computadora <input type='radio' name='equipo' value='Impresora'>Impresora <input type='radio' name='equipo' value='Celular'>Celular";
-     hilera.appendChild(celda);
-     
-     // agrega la hilera al final de la tabla (al final del elemento tblbody)
-     tblBody.appendChild(hilera);
-     
-     // posiciona el <tbody> debajo del elemento <table>
-     tabla.appendChild(tblBody);
-     // appends <table> into <div>
-     div.appendChild(tabla);
-     // modifica el atributo "border" de la tabla y lo fija a "2";
-     tabla.setAttribute("border", "2");
-     */
+
+function inicio() {
+
+    //Darle el alto y ancho
+    $("#pop").css('width', ' 60%');
+    $("#pop").css('height', ' 50%');
+
+    //Esconder el popup
+    $("#pop").hide();
+    $(".popupGrayBg").hide();
+
+    //Centra el popup   
+    $("#pop").css("left", "32%");
+    $("#pop").css("top", "25%");
+
+}
+
+
+function mostrar( ) {
+
+    $(".popupGrayBg").fadeIn('fast');
+    $("#pop").fadeIn('fast');
 }
 
 
 
+function cerrar() {
 
+    $(".popupGrayBg").fadeOut('fast');
+    $("#pop").fadeOut('fast');
+}
+ 
+ function agregarEquipo(){
+     
+             var equipo="ninguno";
 
+ 
+
+        var equipos=document.getElementsByName("equipo");
+
+        
+
+        for(var i=0;i<equipos.length;i++)
+
+        {
+
+            if(equipos[i].checked)
+
+                equipo=equipos[i].value;
+
+        }
+     
+     var html="<table class="+"CSS_Table"+"><th>Equipo</th><th>Marca</th><th>Modelo</th><th>Serie</th><tr><td>"+equipo+"</td><td>"+document.getElementById("Marca").value+"</td><td>"+document.getElementById("Modelo").value+"</td><td>"+document.getElementById("Serie").value+"</td></tr></table>";
+     var aux = document.createElement("div");
+     aux.innerHTML+=html;
+     document.getElementById("panelEquipos").appendChild(aux);
+     cerrar();
+ }
+ 
+ function guardarBoleta(){
+     alert("Lo sentimos esta opcion no está disponible en el prototipo");
+ }

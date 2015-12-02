@@ -11,6 +11,7 @@
     </head>
     <body>
         <table class="CSS_Table">
+
             <th>N° de Orden</th>
             <th>Cliente</th>
             <th>Daño</th>
